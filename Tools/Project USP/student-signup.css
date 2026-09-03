@@ -1,0 +1,762 @@
+/* RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* BODY */
+
+body {
+    min-height: 100vh;
+
+    padding: 18px;
+
+    font-family: Arial, sans-serif;
+
+    color: #10284e;
+
+    background: #f3f7ff;
+
+    overflow-x: hidden;
+}
+
+
+/* BACKGROUND */
+
+.background-circle {
+    position: fixed;
+
+    border-radius: 50%;
+
+    z-index: -1;
+}
+
+
+.circle-one {
+    width: 360px;
+    height: 360px;
+
+    top: -120px;
+    right: -80px;
+
+    background: #dce9ff;
+}
+
+
+.circle-two {
+    width: 330px;
+    height: 330px;
+
+    bottom: -150px;
+    left: -100px;
+
+    background: #e1ecff;
+}
+
+
+/* CONTAINER */
+
+.signup-container {
+    width: 100%;
+    max-width: 920px;
+
+    margin: auto;
+
+    padding: 30px 36px 18px;
+
+    background: rgba(255, 255, 255, 0.9);
+
+    border: 1px solid rgba(255, 255, 255, 0.95);
+
+    border-radius: 25px;
+
+    box-shadow: 0 18px 45px rgba(50, 90, 150, 0.1);
+
+    backdrop-filter: blur(12px);
+}
+
+
+/* BRAND */
+
+.brand {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* BRAND IMAGE */
+
+.brand img {
+    width: 440px;
+    height: auto;
+
+    display: block;
+
+    object-fit: contain;
+}
+
+
+/* TABLET */
+
+@media (max-width: 900px) {
+
+    .brand img {
+        width: 380px;
+    }
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .brand img {
+        width: 350px;
+    }
+}
+
+
+/* SMALL PHONES */
+
+@media (max-width: 380px) {
+
+    .brand img {
+        width: 300px;
+    }
+}
+
+/* HEADING */
+
+.heading {
+    text-align: center;
+
+    margin-bottom: 11px;
+}
+
+
+.heading h1 {
+    margin-bottom: 8px;
+
+    color: #10284e;
+
+    font-size: 40px;
+
+    line-height: 1.15;
+}
+
+
+.heading p {
+    color: #5f7192;
+
+    font-size: 17px;
+}
+
+
+.heading-line {
+    width: 48px;
+    height: 3px;
+
+    margin: 19px auto 0;
+
+    background: #1769ff;
+
+    border-radius: 5px;
+}
+
+
+/* FORM SECTION */
+
+.form-section {
+    margin-top: 11px;
+}
+
+
+.section-title {
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    margin-bottom: 14px;
+}
+
+
+.section-icon {
+    width: 44px;
+    height: 44px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 11px;
+
+    background: #e9f1ff;
+
+    color: #1769ff;
+}
+
+
+.section-icon i {
+    font-size: 22px;
+}
+
+
+.section-title h2 {
+    color: #1769ff;
+
+    font-size: 17px;
+}
+
+
+/* FORM GRID */
+
+.form-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    column-gap: 20px;
+
+    row-gap: 12px;
+}
+
+
+.form-group {
+    min-width: 0;
+}
+
+
+.full-width {
+    grid-column: 1 / -1;
+}
+
+
+/* LABEL */
+
+.form-group label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: #10284e;
+
+    font-size: 14px;
+
+    font-weight: bold;
+}
+
+
+/* INPUT */
+
+.input-box {
+    width: 100%;
+    height: 49px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    padding: 0 14px;
+
+    border: 2px solid #dce4f0;
+
+    border-radius: 10px;
+
+    background: white;
+}
+
+
+.input-box>i {
+    flex-shrink: 0;
+
+    color: #7185a7;
+
+    font-size: 17px;
+}
+
+
+.input-box input,
+.input-box select,
+.input-box textarea {
+    width: 100%;
+
+    border: none;
+
+    outline: none;
+
+    background: transparent;
+
+    color: #526584;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 14px;
+}
+
+
+.input-box input::placeholder,
+.input-box textarea::placeholder {
+    color: #8192b0;
+}
+
+
+/* SELECT */
+
+.select-box {
+    position: relative;
+}
+
+
+.select-box select {
+    appearance: none;
+
+    cursor: pointer;
+
+    padding-right: 20px;
+}
+
+
+.dropdown-icon {
+    position: absolute;
+
+    right: 13px;
+
+    pointer-events: none;
+}
+
+
+/* TEXTAREA */
+
+.textarea-box {
+    height: 69px;
+
+    align-items: flex-start;
+
+    padding-top: 14px;
+}
+
+
+.textarea-box textarea {
+    height: 100%;
+
+    resize: vertical;
+
+    line-height: 1.4;
+}
+
+
+/* PASSWORD ICON */
+
+.password-icon {
+    cursor: pointer;
+}
+
+
+/* PASSWORD NOTE */
+
+.password-note {
+    min-height: 32px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-top: 9px;
+
+    padding: 7px 12px;
+
+    border-radius: 9px;
+
+    background: #eaf2ff;
+
+    color: #1769ff;
+
+    font-size: 12px;
+
+    font-weight: 500;
+}
+
+
+.password-note i {
+    flex-shrink: 0;
+
+    font-size: 17px;
+}
+
+
+/* BUTTON */
+
+.create-account {
+    width: 100%;
+    height: 48px;
+
+    margin-top: 11px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 18px;
+
+    background: #1769ff;
+
+    color: white;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+
+.create-account:hover {
+    transform: translateY(-2px);
+
+    box-shadow: 0 8px 20px rgba(23, 105, 255, 0.2);
+}
+
+
+.create-account i {
+    font-size: 19px;
+
+    transition: transform 0.2s ease;
+}
+
+
+.create-account:hover i {
+    transform: translateX(4px);
+}
+
+
+/* LOGIN */
+
+.login-text {
+    margin-top: 11px;
+
+    text-align: center;
+
+    color: #65799a;
+
+    font-size: 15px;
+}
+
+
+.login-text a {
+    color: #1769ff;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+
+.login-text a:hover {
+    text-decoration: underline;
+}
+
+
+/* TABLET */
+
+@media (max-width: 800px) {
+
+    body {
+        padding: 15px;
+    }
+
+
+    .signup-container {
+        max-width: 720px;
+
+        padding: 28px 30px 18px;
+    }
+
+
+    .brand-mark {
+        width: 60px;
+        height: 60px;
+
+        font-size: 33px;
+    }
+
+
+    .brand-text h2 {
+        font-size: 23px;
+    }
+
+
+    .brand-text p {
+        font-size: 11px;
+    }
+
+
+    .heading h1 {
+        font-size: 36px;
+    }
+
+
+    .heading p {
+        font-size: 16px;
+    }
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 10px;
+    }
+
+
+    .signup-container {
+        padding: 24px 18px 17px;
+
+        border-radius: 20px;
+    }
+
+
+    .brand {
+        gap: 10px;
+
+        margin-bottom: 13px;
+    }
+
+
+    .brand-mark {
+        width: 52px;
+        height: 52px;
+
+        border-radius: 13px;
+
+        font-size: 29px;
+    }
+
+
+    .brand-text h2 {
+        font-size: 18px;
+
+        letter-spacing: 3px;
+    }
+
+
+    .brand-text p {
+        font-size: 8px;
+
+        letter-spacing: 2.5px;
+    }
+
+
+    .heading {
+        margin-bottom: 10px;
+    }
+
+
+    .heading h1 {
+        font-size: 29px;
+    }
+
+
+    .heading p {
+        font-size: 14px;
+
+        line-height: 1.5;
+    }
+
+
+    .heading-line {
+        margin-top: 15px;
+    }
+
+
+    .form-section {
+        margin-top: 12px;
+    }
+
+
+    .section-title {
+        gap: 10px;
+
+        margin-bottom: 11px;
+    }
+
+
+    .section-icon {
+        width: 38px;
+        height: 38px;
+
+        border-radius: 10px;
+    }
+
+
+    .section-icon i {
+        font-size: 19px;
+    }
+
+
+    .section-title h2 {
+        font-size: 15px;
+    }
+
+
+    .form-grid {
+        grid-template-columns: 1fr;
+
+        row-gap: 11px;
+    }
+
+
+    .full-width {
+        grid-column: auto;
+    }
+
+
+    .form-group label {
+        font-size: 13px;
+
+        margin-bottom: 6px;
+    }
+
+
+    .input-box {
+        height: 46px;
+
+        padding: 0 12px;
+
+        gap: 11px;
+    }
+
+
+    .input-box>i {
+        font-size: 16px;
+    }
+
+
+    .input-box input,
+    .input-box select,
+    .input-box textarea {
+        font-size: 13px;
+    }
+
+
+    .textarea-box {
+        height: 70px;
+
+        padding-top: 12px;
+    }
+
+
+    .password-note {
+        font-size: 10px;
+
+        line-height: 1.4;
+    }
+
+
+    .create-account {
+        height: 47px;
+
+        font-size: 15px;
+    }
+
+
+    .login-text {
+        font-size: 13px;
+    }
+
+
+    .circle-one {
+        width: 250px;
+        height: 250px;
+
+        top: -100px;
+        right: -100px;
+    }
+
+
+    .circle-two {
+        width: 220px;
+        height: 220px;
+
+        bottom: -100px;
+        left: -100px;
+    }
+}
+
+
+/* SMALL PHONES */
+
+@media (max-width: 380px) {
+
+    .signup-container {
+        padding: 22px 14px 15px;
+    }
+
+
+    .brand-mark {
+        width: 48px;
+        height: 48px;
+
+        font-size: 27px;
+    }
+
+
+    .brand-text h2 {
+        font-size: 16px;
+
+        letter-spacing: 2.5px;
+    }
+
+
+    .brand-text p {
+        font-size: 7px;
+
+        letter-spacing: 2px;
+    }
+
+
+    .heading h1 {
+        font-size: 26px;
+    }
+
+
+    .heading p {
+        font-size: 13px;
+    }
+
+
+    .input-box {
+        height: 44px;
+    }
+
+
+    .password-note {
+        padding: 6px 9px;
+
+        font-size: 9px;
+    }
+
+
+    .create-account {
+        font-size: 14px;
+    }
+}
