@@ -16,11 +16,11 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
-<body class="open-sans-normal">
-    <header class="bg-[#FFF8F3] md:p-7 flex">
+<body class="open-sans-normal bg-black">
+    <header class="bg-gradient-to-b md:bg-gradient-to-r from-orange-300 to-transparent p-7 lg:py-22  flex">
 
         <!-- Developer image -->
-        <div class="hidden md:block md:w-15 lg:w-24">
+        <div class="hidden md:block md:w-15 lg:w-24 mr-10">
             <img src="Media/developer.png" alt="" class="">
         </div>
 
@@ -31,10 +31,10 @@
             <nav class="flex items-center justify-between p-8 max-w-full mx-auto">
 
                 <h3 class="text-3xl md:text-5xl font-extrabold">
-                    Ma<span class="text-[#FD6E0A]">s</span>h
+                    Ma<span class="text-white">s</span>h
                 </h3>
 
-                <ul class="text-[#474747] flex items-center gap-4  md:gap-10 text-sm md:text-[16px]">
+                <ul class="text-white flex items-center gap-4  md:gap-10 text-sm md:text-[16px]">
                     <li><a href="https://www.youtube.com/watch?v=QDia3e12czc">Portfolio</a></li>
                     <li><a href="https://www.youtube.com/watch?v=QDia3e12czc">Blog</a></li>
 
@@ -53,7 +53,7 @@
 
 
             <!-- Banner -->
-            <div class="flex flex-col md:flex-row items-center justify-between max-w-full mx-auto px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between max-w-full mx-auto">
 
                 <div>
                     <h4 class="text-3xl font-semibold text-[#474747]">
@@ -64,7 +64,7 @@
                         Md. Shahraj Mashrafe <br> Mashfe
                     </h1>
 
-                    <p class="text-[#757575] max-w-xl mt-5">
+                    <p class="text-white max-w-xl mt-5">
                         I’m a passionate developer and Computer Science student who enjoys turning ideas into clean,
                         functional, and user-friendly digital experiences. I’m currently building my skills in HTML,
                         CSS, JavaScript, responsive web design, and modern development practices.
@@ -84,40 +84,99 @@
     </header>
 
     <!-- skills section -->
-     <section class="skills m-10 lg:m-20">
+    <section class="skills m-10 lg:m-20">
         <div class="text-center">
-            <h1 class="text-3xl font-bold">What I do</h1>
+            <h1 class="text-3xl font-bold text-white">What I do</h1>
             <p class="text-[18px] my-4 text-[#757575]">
-                I have more than 10 years experience building software for clients all over the world. Below is a quick overview of my main technical skill sets and technologies i use. Want to find out more about my experience? Check out my online resume and project portfolio.
+                I have more than 10 years experience building software for clients all over the world. Below is a quick
+                overview of my main technical skill sets and technologies i use. Want to find out more about my
+                experience? Check out my online resume and project portfolio.
             </p>
         </div>
 
         <!-- skill infos -->
         <div class="skill-info flex flex-col md:flex-row gap-6 my-8">
-            <div class="bg-white shadow-lg rounded-lg p-4">
+            <div class="bg-white shadow-lg shadow-yellow-300 rounded-lg p-4">
                 <h3 class="text-xl font-bold mb-1">Vanilla JavaScript</h3>
                 <p class="text-[#757575]">Building interactive and dynamic web experiences using JavaScript,
-            including DOM manipulation, events, APIs, and modern ES6+ features.</p>
+                    including DOM manipulation, events, APIs, and modern ES6+ features.</p>
             </div>
-                        <div class="bg-white shadow-lg rounded-lg p-4">
+            <div class="bg-white shadow-lg rounded-lg p-4 shadow-blue-300">
                 <h3 class="text-xl font-bold mb-1">React</h3>
                 <p class="text-[#757575]">Creating responsive and reusable user interfaces with React,
-            using components, props, state, hooks, and API integration.</p>
+                    using components, props, state, hooks, and API integration.</p>
             </div>
-                        <div class="bg-white shadow-lg rounded-lg p-4">
+            <div class="bg-white shadow-lg rounded-lg p-4 shadow-green-600">
                 <h3 class="text-xl font-bold mb-1">Node.js</h3>
                 <p class="text-[#757575]">Developing scalable backend applications and REST APIs with Node.js,
-            handling server-side logic, authentication, and database integration.</p>
+                    handling server-side logic, authentication, and database integration.</p>
             </div>
-                        <div class="bg-white shadow-lg rounded-lg p-4">
+            <div class="bg-white shadow-lg rounded-lg p-4 shadow-green-300">
                 <h3 class="text-xl font-bold mb-1">MongoDB</h3>
                 <p class="text-[#757575]">Working with flexible NoSQL databases to store and manage application
-            data, with experience in CRUD operations, schemas, and data modeling.</p>
+                    data, with experience in CRUD operations, schemas, and data modeling.</p>
             </div>
         </div>
-        
-     </section>
 
+    </section>
+
+    <!-- experience section -->
+
+    <section class="experience mx-6 md:mx-12">
+        <h3 class="text-center text-3xl font-bold text-white">A summary of My Resume</h3>
+        <div class="experience-container m-8 flex flex-col lg:flex-row gap-y-8 gap-x-20 text-justify [text-align-last:center]">
+            <div class="mb-4">
+                <h3 class="text-[25px] font-bold color-[#474747] text-white">HTML Developer</h3>
+                <h4 class="text-[20px] font-semibold text-[#757575] my-2">Adobe Inc / 2017 - 2018</h4>
+                <p class="text-[#757575] text-[16px]">Developed responsive and user-friendly web interfaces using HTML5, CSS3,
+    and modern web development practices. Focused on creating clean layouts,
+    semantic markup, cross-browser compatibility, and accessible user experiences.</p>
+            </div>
+                        <div class="mb-4">
+                <h3 class="text-[25px] font-bold color-[#474747] text-white">Front-End Developer</h3>
+                <h4 class="text-[20px] font-semibold text-[#757575] my-2">TechNova Solutions / 2022 - 2023</h4>
+                <p class="text-[#757575] text-[16px]">Developed responsive and interactive websites using HTML, CSS, JavaScript, and React. Worked on reusable UI components, improved website responsiveness, integrated APIs, and collaborated with designers to create clean and user-friendly interfaces.</p>
+            </div>
+                        <div class="mb-4">
+                <h3 class="text-[25px] font-bold color-[#474747] text-white">Full-Stack Web Developer</h3>
+                <h4 class="text-[20px] font-semibold text-[#757575] my-2">WebCraft Studio / 2023 - 2024</h4>
+                <p class="text-[#757575] text-[16px]">Built and maintained full-stack web applications using React, Node.js, Express.js, and MongoDB. Developed REST APIs, implemented CRUD operations, integrated databases, and worked on authentication and responsive frontend interfaces.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- footer section -->
+     <footer class="bg-gradient-to-b from-orange-300 to-transparent max-w-full py-10 px-12 lg:py-[130px] lg:px-[230px]">
+        <div class="flex flex-col md:flex-row gap-10 justify-between">
+            <div class="flex-1">
+                <h2 class="text-[35px] font-bold text-white">Let’s Connect</h2>
+                <p class="text-white text-[16px] my-5">Please fill out the form on this section to contact with me or call between <br> 9:00 A.M and 8.00 P.M ET, Monday through Friday.</p>
+                <div class="flex gap-6">
+                    <img src="Media/icons/facebook.png" alt="">
+                    <img src="Media/icons/twitter.png" alt="">
+                    <img src="Media/icons/insta.png" alt="">
+                </div>
+            </div>
+            <div class="flex-1">
+                <h2 class="text-[35px] font-bold text-white">Let’s Message me</h2>
+                <div class="flex flex-col gap-5 w-full my-5">
+                    <input type="text" name="" placeholder="Your name" id="" class="max-w-full bg-white rounded-lg p-2">
+                    <input type="email" name="" placeholder="Your email" id="" class="max-w-full bg-white rounded-lg p-2">
+                     <textarea
+            name="message"
+            placeholder="Message"
+            class="w-full h-28 bg-white rounded-lg p-2 resize-none overflow-y-auto"
+        ></textarea>
+                </div>
+                <button class="font-bold text-sm md:text-[20px] text-white bg-[#FD6E0A] px-4 py-2 my-6 rounded-lg transition-all duration-300
+               hover:bg-[#e85f00] hover:scale-105 hover:shadow-lg
+               active:scale-95">
+                               Submit
+                            </button>
+            </div>
+        </div>
+     </footer>
 </body>
 
 </html>
